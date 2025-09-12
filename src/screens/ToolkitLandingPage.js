@@ -37,7 +37,7 @@ const ToolkitLandingPage = () => {
                 <span className="text-white font-bold text-xl">T</span>
               </div>
               <span className="text-2xl font-bold bg-[#FA4E61] bg-clip-text text-transparent">
-                Toolkit
+                ToolBox
               </span>
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -84,7 +84,7 @@ const ToolkitLandingPage = () => {
                   <span className="text-gray-900">Instantly</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Toolkit is the ultimate app for finding trusted, skilled
+                  ToolBox is the ultimate app for finding trusted, skilled
                   artisans for your home repair and service needs. Seamless,
                   secure, and hassle-free.
                 </p>
@@ -108,12 +108,12 @@ const ToolkitLandingPage = () => {
                 </div>
                 <div className="flex items-center space-x-1">
                   <Users className="w-5 h-5 text-blue-600" />
-                  <span className="font-semibold">50K+</span>
+                  <span className="font-semibold">50</span>
                   <span>Users</span>
                 </div>
                 <div className="flex items-center space-x-1">
                   <CheckCircle className="w-5 h-5 text-green-600" />
-                  <span className="font-semibold">10K+</span>
+                  <span className="font-semibold">100</span>
                   <span>Verified Artisans</span>
                 </div>
               </div>
@@ -304,7 +304,7 @@ const ToolkitLandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl font-bold text-gray-900">
-              Why Choose Toolkit?
+              Why Choose ToolBox?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Everything you need to find, book, and manage home repair
@@ -372,7 +372,7 @@ const ToolkitLandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl font-bold text-gray-900">
-              How Toolkit Works
+              How ToolBox Works
             </h2>
             <p className="text-xl text-gray-600">
               Getting your home repair needs met is as easy as 1-2-3.
@@ -443,7 +443,7 @@ const ToolkitLandingPage = () => {
                   For Artisans: Grow Your Business
                 </h2>
                 <p className="text-xl text-gray-600">
-                  Join Toolkit as an artisan to connect with clients, manage
+                  Join ToolBox as an artisan to connect with clients, manage
                   your schedule, and build your reputation.
                 </p>
               </div>
@@ -511,7 +511,7 @@ const ToolkitLandingPage = () => {
       <section className="py-20 bg-gradient-to-r from-gray-900 to-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl font-bold">Why Toolkit Stands Out</h2>
+            <h2 className="text-4xl font-bold">Why ToolBox Stands Out</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -563,7 +563,7 @@ const ToolkitLandingPage = () => {
             </h2>
             <p className="text-xl text-blue-100">
               Whether you're fixing a leaky faucet or offering your expertise,
-              Toolkit is here to make it happen.
+              ToolBox is here to make it happen.
             </p>
             <p className="text-lg text-blue-100">
               Download now and experience the easiest way to connect for home
@@ -599,7 +599,7 @@ const ToolkitLandingPage = () => {
                 <div className="w-8 h-8 bg-[#FA4E61] rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">T</span>
                 </div>
-                <span className="text-xl font-bold">Toolkit</span>
+                <span className="text-xl font-bold">ToolBox</span>
               </div>
               <p className="text-gray-400">
                 The ultimate app for finding trusted, skilled artisans for your
@@ -703,7 +703,7 @@ const ToolkitLandingPage = () => {
             </div>
           )}
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Toolkit. All rights reserved.</p>
+            <p>&copy; 2025 ToolBox SMP 96 Group One. All rights reserved.</p>
           </div>
         </div>
       </footer>
