@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import toolboxlogo from "../assets/images/toolboklogo.png";
 import {
   Shield,
@@ -34,10 +34,14 @@ const ToolkitLandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
-              <img src={toolboxlogo} alt="ToolBox Logo" className="w-[100px] h-[50px] ml-1" />
+              <img
+                src={toolboxlogo}
+                alt="ToolBox Logo"
+                style={{ width: "200px" }}
+                className="ml-1"
+              />
               <div className="w-10 h-10 flex items-center justify-center">
                 {/* <span className="text-white font-bold text-xl">T</span> */}
-                
               </div>
               {/* <span className="text-2xl font-bold bg-[#FA4E61] bg-clip-text text-transparent">
                 ToolBox
@@ -94,7 +98,10 @@ const ToolkitLandingPage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button onClick={handleDownload} className="bg-[#FA4E61] text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                <button
+                  onClick={handleDownload}
+                  className="bg-[#FA4E61] text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                >
                   <Download className="inline-block w-5 h-5 mr-2" />
                   Download Now
                 </button>
@@ -599,10 +606,16 @@ const ToolkitLandingPage = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-[#FA4E61] rounded-lg flex items-center justify-center">
+                <img
+                  src={toolboxlogo}
+                  alt="ToolBox Logo"
+                  style={{ width: "100px" }}
+                  className="ml-1"
+                />
+                {/* <div className="w-8 h-8 bg-[#FA4E61] rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">T</span>
                 </div>
-                <span className="text-xl font-bold">ToolBox</span>
+                <span className="text-xl font-bold">ToolBox</span> */}
               </div>
               <p className="text-gray-400">
                 The ultimate app for finding trusted, skilled artisans for your
