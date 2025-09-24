@@ -21,6 +21,37 @@ import {
   Download,
 } from "lucide-react";
 
+var contributors = [
+  {
+    name: "Femi",
+    role: "Contributor",
+    image: Femi,
+    bio: "Visionary leader with 10+ years in home services industry",
+    color: "from-blue-500 to-blue-600",
+  },
+  {
+    name: "Bukola",
+    role: "Contributor",
+    image: Bukola,
+    bio: "Tech expert passionate about connecting communities",
+    color: "from-purple-500 to-purple-600",
+  },
+  {
+    name: "Tunde",
+    role: "Contributor",
+    image: Tunde,
+    bio: "Full-stack developer building seamless user experiences",
+    color: "from-green-500 to-green-600",
+  },
+  {
+    name: "Ndubisi",
+    role: "Contributor",
+    image: Ndubisi,
+    bio: "Creative designer focused on intuitive app interfaces",
+    color: "from-orange-500 to-orange-600",
+  },
+];
+
 const ToolkitLandingPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -545,36 +576,7 @@ const ToolkitLandingPage = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {[
-              {
-                name: "Femi",
-                role: "Contributor",
-                image: Femi ,
-                bio: "Visionary leader with 10+ years in home services industry",
-                color: "from-blue-500 to-blue-600",
-              },
-              {
-                name: "Bukola",
-                role: "Contributor",
-                image: Bukola ,
-                bio: "Tech expert passionate about connecting communities",
-                color: "from-purple-500 to-purple-600",
-              },
-              {
-                name: "Tunde",
-                role: "Contributor",
-                image: Tunde,
-                bio: "Full-stack developer building seamless user experiences",
-                color: "from-green-500 to-green-600",
-              },
-              {
-                name: "Ndubisi",
-                role: "Contributor",
-                image: Ndubisi,
-                bio: "Creative designer focused on intuitive app interfaces",
-                color: "from-orange-500 to-orange-600",
-              },
-            ].map((member, index) => (
+            {contributors.map((member, index) => (
               <div
                 key={index}
                 className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
@@ -584,7 +586,10 @@ const ToolkitLandingPage = () => {
                   <div
                     className={`w-20 h-20 bg-gradient-to-r ${member.color} rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300`}
                   >
-                      <img src={member.image} className="w-[100%] h-[100%] rounded-full" />
+                    <img
+                      src={member.image}
+                      className="w-[100%] h-[100%] rounded-full"
+                    />
                   </div>
 
                   {/* Member Info */}
