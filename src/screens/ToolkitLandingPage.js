@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import toolboxlogo from "../assets/images/toolboklogo.png";
+import video from "../assets/product_video.mp4";
 import {
   Shield,
   Calendar,
@@ -18,6 +19,10 @@ import {
 
 const ToolkitLandingPage = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+
+  const handleVideoOpen = () => setIsVideoOpen(true);
+  const handleVideoClose = () => setIsVideoOpen(false);
   const handleComingSoon = () => {
     alert("Coming Soon!");
   };
@@ -434,6 +439,14 @@ const ToolkitLandingPage = () => {
             ))}
           </div>
         </div>
+        <div className="flex flex-row justify-center w-[100%] items-center">
+          <button
+              onClick={handleVideoOpen}
+              className="bg-[#FA4E61] text-white px-8 py-3 mt-8 rounded-full hover:shadow-lg transition-all duration-300"
+            >
+              Watch Video
+            </button>
+        </div>
       </section>
 
       {/* For Artisans Section */}
@@ -686,6 +699,27 @@ const ToolkitLandingPage = () => {
               </div>
             </div>
           </div>
+          {isVideoOpen && (
+            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50">
+              <div className="bg-white rounded-2xl p-4 w-[90%] max-w-2xl relative">
+                {/* Close button */}
+                <button
+                  onClick={handleVideoClose}
+                  className="absolute top-2 right-2 text-gray-600 hover:text-black text-xl"
+                >
+                  ✕
+                </button>
+
+                {/* Video player */}
+                <video
+                  src={video} // put your video in public/assets/video.mp4
+                  controls
+                  autoPlay
+                  className="rounded-lg w-full h-auto"
+                />
+              </div>
+            </div>
+          )}
           {isOpen && (
             <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
               {/* Modal Content */}
