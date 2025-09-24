@@ -1,5 +1,9 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import toolboxlogo from "../assets/images/toolboklogo.png";
+import Femi from "../assets/images/Femi.jpg";
+import Bukola from "../assets/images/Bukola.jpg";
+import Ndubisi from "../assets/images/Ndubisi.jpg";
+import Tunde from "../assets/images/Tunde.jpg";
 import video from "../assets/product_video.mp4";
 import {
   Shield,
@@ -39,10 +43,13 @@ const ToolkitLandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
-              <img src={toolboxlogo} alt="ToolBox Logo" className="w-[100px] h-[50px] ml-1" />
+              <img
+                src={toolboxlogo}
+                alt="ToolBox Logo"
+                className="w-[100px] h-[50px] ml-1"
+              />
               <div className="w-10 h-10 flex items-center justify-center">
                 {/* <span className="text-white font-bold text-xl">T</span> */}
-                
               </div>
               {/* <span className="text-2xl font-bold bg-[#FA4E61] bg-clip-text text-transparent">
                 ToolBox
@@ -99,7 +106,10 @@ const ToolkitLandingPage = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button onClick={handleDownload} className="bg-[#FA4E61] text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                <button
+                  onClick={handleDownload}
+                  className="bg-[#FA4E61] text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                >
                   <Download className="inline-block w-5 h-5 mr-2" />
                   Download Now
                 </button>
@@ -441,11 +451,11 @@ const ToolkitLandingPage = () => {
         </div>
         <div className="flex flex-row justify-center w-[100%] items-center">
           <button
-              onClick={handleVideoOpen}
-              className="bg-[#FA4E61] text-white px-8 py-3 mt-8 rounded-full hover:shadow-lg transition-all duration-300"
-            >
-              Watch Video
-            </button>
+            onClick={handleVideoOpen}
+            className="bg-[#FA4E61] text-white px-8 py-3 mt-8 rounded-full hover:shadow-lg transition-all duration-300"
+          >
+            Watch Video
+          </button>
         </div>
       </section>
 
@@ -489,7 +499,7 @@ const ToolkitLandingPage = () => {
               </div>
 
               <button className="bg-[#FA4E61] text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                Join as Artisan
+                Join as an Artisan
               </button>
             </div>
 
@@ -519,10 +529,110 @@ const ToolkitLandingPage = () => {
                 </div>
               </div>
             </div>
+
+            {/* Team Section */}
           </div>
         </div>
       </section>
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-4xl font-bold text-gray-900">Meet Our Team</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              The passionate people behind Toolkit who are dedicated to
+              connecting homeowners with trusted artisans.
+            </p>
+          </div>
 
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {[
+              {
+                name: "Femi",
+                role: "Contributor",
+                image: Femi ,
+                bio: "Visionary leader with 10+ years in home services industry",
+                color: "from-blue-500 to-blue-600",
+              },
+              {
+                name: "Bukola",
+                role: "Contributor",
+                image: Bukola ,
+                bio: "Tech expert passionate about connecting communities",
+                color: "from-purple-500 to-purple-600",
+              },
+              {
+                name: "Tunde",
+                role: "Contributor",
+                image: Tunde,
+                bio: "Full-stack developer building seamless user experiences",
+                color: "from-green-500 to-green-600",
+              },
+              {
+                name: "Ndubisi",
+                role: "Contributor",
+                image: Ndubisi,
+                bio: "Creative designer focused on intuitive app interfaces",
+                color: "from-orange-500 to-orange-600",
+              },
+            ].map((member, index) => (
+              <div
+                key={index}
+                className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              >
+                <div className="text-center space-y-4">
+                  {/* Profile Avatar */}
+                  <div
+                    className={`w-20 h-20 bg-gradient-to-r ${member.color} rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300`}
+                  >
+                      <img src={member.image} className="w-[100%] h-[100%] rounded-full" />
+                  </div>
+
+                  {/* Member Info */}
+                  <div className="space-y-2">
+                    <h3 className="text-xl font-bold text-gray-900">
+                      {member.name}
+                    </h3>
+                    <p
+                      className={`text-sm font-semibold bg-gradient-to-r ${member.color} bg-clip-text text-transparent`}
+                    >
+                      {member.role}
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {member.bio}
+                    </p>
+                  </div>
+
+                  {/* Social Links (optional) */}
+                  <div className="flex justify-center space-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <button className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-100 transition-colors">
+                      <span className="text-xs text-gray-600">in</span>
+                    </button>
+                    <button className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-100 transition-colors">
+                      <span className="text-xs text-gray-600">@</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Join Our Team CTA */}
+          {/* <div className="text-center mt-16">
+            <div className="bg-white p-8 rounded-2xl shadow-lg max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Want to Join Our Team?
+              </h3>
+              <p className="text-gray-600 mb-6">
+                We're always looking for talented individuals who share our
+                passion for connecting communities and building great products.
+              </p>
+              <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                View Open Positions
+              </button>
+            </div>
+          </div> */}
+        </div>
+      </section>
       {/* Why Toolkit Stands Out */}
       <section className="py-20 bg-gradient-to-r from-gray-900 to-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
