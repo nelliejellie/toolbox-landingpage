@@ -3,6 +3,13 @@ import toolboxlogo from "../assets/images/toolboklogo.png";
 import Femi from "../assets/images/Femi.jpg";
 import Bukola from "../assets/images/Bukola.jpg";
 import Ndubisi from "../assets/images/Ndubisi.jpg";
+import abel from "../assets/images/abel.jpg";
+import nosa from "../assets/images/nosa.jpg";
+import believe from "../assets/images/believe.jpg";
+import victor from "../assets/images/victor.jpg";
+import funke from "../assets/images/Funke.jpg";
+import juliet from "../assets/images/juliet.jpg";
+import brenda from "../assets/images/brenda.jpg";
 import Tunde from "../assets/images/Tunde.jpg";
 import video from "../assets/product_video.mp4";
 import {
@@ -47,6 +54,62 @@ var contributors = [
     name: "Ndubisi",
     role: "Contributor",
     image: Ndubisi,
+    bio: "Creative designer focused on intuitive app interfaces",
+    color: "from-orange-500 to-orange-600",
+  },
+  {
+    name: "Abel",
+    role: "Contributor",
+    image: abel,
+    bio: "Creative designer focused on intuitive app interfaces",
+    color: "from-orange-500 to-orange-600",
+  },
+  {
+    name: "Juliet",
+    role: "Contributor",
+    image: juliet,
+    bio: "Creative designer focused on intuitive app interfaces",
+    color: "from-orange-500 to-orange-600",
+  },
+  {
+    name: "Brenda",
+    role: "Contributor",
+    image: brenda,
+    bio: "Creative designer focused on intuitive app interfaces",
+    color: "from-orange-500 to-orange-600",
+  },
+  {
+    name: "Believe",
+    role: "Contributor",
+    image: believe,
+    bio: "Creative designer focused on intuitive app interfaces",
+    color: "from-orange-500 to-orange-600",
+  },
+  {
+    name: "Nosa",
+    role: "Contributor",
+    image: nosa,
+    bio: "Creative designer focused on intuitive app interfaces",
+    color: "from-orange-500 to-orange-600",
+  },
+  {
+    name: "Abel",
+    role: "Contributor",
+    image: abel,
+    bio: "Creative designer focused on intuitive app interfaces",
+    color: "from-orange-500 to-orange-600",
+  },
+  {
+    name: "Victor",
+    role: "Contributor",
+    image: victor,
+    bio: "Creative designer focused on intuitive app interfaces",
+    color: "from-orange-500 to-orange-600",
+  },
+  {
+    name: "Funke",
+    role: "Contributor",
+    image: funke,
     bio: "Creative designer focused on intuitive app interfaces",
     color: "from-orange-500 to-orange-600",
   },
