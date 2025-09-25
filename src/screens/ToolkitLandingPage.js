@@ -92,13 +92,13 @@ var contributors = [
     bio: "Creative designer focused on intuitive app interfaces",
     color: "from-orange-500 to-orange-600",
   },
-  {
-    name: "Abel",
-    role: "Contributor",
-    image: abel,
-    bio: "Creative designer focused on intuitive app interfaces",
-    color: "from-orange-500 to-orange-600",
-  },
+  // {
+  //   name: "Abel",
+  //   role: "Contributor",
+  //   image: abel,
+  //   bio: "Creative designer focused on intuitive app interfaces",
+  //   color: "from-orange-500 to-orange-600",
+  // },
   {
     name: "Victor",
     role: "Contributor",
