@@ -140,7 +140,8 @@ const ToolkitLandingPage = () => {
               <img
                 src={toolboxlogo}
                 alt="ToolBox Logo"
-                className="w-[100px] h-[50px] ml-1"
+                style={{ width: "200px" }}
+                className="ml-1"
               />
               <div className="w-10 h-10 flex items-center justify-center">
                 {/* <span className="text-white font-bold text-xl">T</span> */}
@@ -790,10 +791,16 @@ const ToolkitLandingPage = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-[#FA4E61] rounded-lg flex items-center justify-center">
+                <img
+                  src={toolboxlogo}
+                  alt="ToolBox Logo"
+                  style={{ width: "100px" }}
+                  className="ml-1"
+                />
+                {/* <div className="w-8 h-8 bg-[#FA4E61] rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">T</span>
                 </div>
-                <span className="text-xl font-bold">ToolBox</span>
+                <span className="text-xl font-bold">ToolBox</span> */}
               </div>
               <p className="text-gray-400">
                 The ultimate app for finding trusted, skilled artisans for your
