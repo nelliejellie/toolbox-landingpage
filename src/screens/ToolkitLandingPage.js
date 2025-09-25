@@ -51,7 +51,7 @@ var contributors = [
     color: "from-green-500 to-green-600",
   },
   {
-    name: "Ndubisi",
+    name: "Ndubuisi",
     role: "Contributor",
     image: Ndubisi,
     bio: "Creative designer focused on intuitive app interfaces",
@@ -92,13 +92,13 @@ var contributors = [
     bio: "Creative designer focused on intuitive app interfaces",
     color: "from-orange-500 to-orange-600",
   },
-  {
-    name: "Abel",
-    role: "Contributor",
-    image: abel,
-    bio: "Creative designer focused on intuitive app interfaces",
-    color: "from-orange-500 to-orange-600",
-  },
+  // {
+  //   name: "Abel",
+  //   role: "Contributor",
+  //   image: abel,
+  //   bio: "Creative designer focused on intuitive app interfaces",
+  //   color: "from-orange-500 to-orange-600",
+  // },
   {
     name: "Victor",
     role: "Contributor",
